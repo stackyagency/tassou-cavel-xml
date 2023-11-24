@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+/*
+@font-face {
+    font-family: 'Russo One';
+    src: url('./fonts/RussoOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Source Sans Pro Black */
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: url("chemin/vers/SourceSansPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+/* Source Sans Pro Bold */
+@font-face {
+  font-family: "SourceSansPro-Bold";
+  src: url("chemin/vers/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+/* Source Sans Pro Semibold */
+@font-face {
+  font-family: "SourceSansPro-Semibold";
+  src: url("chemin/vers/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+/* Source Sans Pro Regular */
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url("chemin/vers/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Source Sans Pro Italic */
+@font-face {
+  font-family: "SourceSansPro-Italic";
+  src: url("chemin/vers/SourceSansPro-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+/* Source Sans Pro Semibold Italic */
+@font-face {
+  font-family: "SourceSansPro-SemiboldItalic";
+  src: url("chemin/vers/SourceSansPro-SemiboldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+.self-centered {
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+.flex.space-b {
+  justify-content: space-between;
+}
+
+* {
+  box-sizing: border-box;
+}
+* body {
+  margin: 0 !important;
+}
+* body .banner {
+  width: 100%;
+  height: 55vh;
+  margin: 0;
+  padding: 0px 60px 100px 60px;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #2D4F9D;
+}
+* body .banner h1 {
+  margin: 0;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Russo One", Sans-serif;
+  font-size: 90px;
+  font-weight: 600;
+  letter-spacing: 4.5px;
+}
+* body .content {
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  padding: 0px 120px;
+  font-family: "SourceSansPro-Regular", sans-serif;
+}
+* body .content h2 {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+* body .content p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: rgba(0, 0, 0, 0.4);
+}
+* body .content form {
+  width: 100%;
+  height: 500px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+* body .content form .section {
+  display: flex;
+  width: 100%;
+  padding: 30px 60px;
+}
+* body .content form .section .field {
+  display: flex;
+}
+* body .content form .section .field.col {
+  flex-direction: column;
+}
+* body .content form .section.introduction {
+  gap: 10px;
+}
+* body .content form .section.introduction h2 {
+  margin: 0;
+}
+* body .content form .section.col {
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=ouput.css.map */

@@ -1,0 +1,10 @@
+.self-centered {
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    &.space-b {
+        justify-content: space-between;
+    }
+}
