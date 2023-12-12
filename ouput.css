@@ -1,54 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
-/*
-@font-face {
-    font-family: 'Russo One';
-    src: url('./fonts/RussoOne-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Source Sans Pro Black */
-@font-face {
-  font-family: "SourceSansPro-Black";
-  src: url("chemin/vers/SourceSansPro-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-/* Source Sans Pro Bold */
-@font-face {
-  font-family: "SourceSansPro-Bold";
-  src: url("chemin/vers/SourceSansPro-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-/* Source Sans Pro Semibold */
-@font-face {
-  font-family: "SourceSansPro-Semibold";
-  src: url("chemin/vers/SourceSansPro-Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-/* Source Sans Pro Regular */
-@font-face {
-  font-family: "SourceSansPro-Regular";
-  src: url("chemin/vers/SourceSansPro-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-/* Source Sans Pro Italic */
-@font-face {
-  font-family: "SourceSansPro-Italic";
-  src: url("chemin/vers/SourceSansPro-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-/* Source Sans Pro Semibold Italic */
-@font-face {
-  font-family: "SourceSansPro-SemiboldItalic";
-  src: url("chemin/vers/SourceSansPro-SemiboldItalic.ttf") format("truetype");
-  font-weight: 600;
-  font-style: italic;
-}
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap");
 .self-centered {
   align-items: center;
 }
@@ -65,6 +16,21 @@
 }
 * body {
   margin: 0 !important;
+  height: 100%;
+  display: block;
+}
+* body .button {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.6);
+  text-align: justify;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: fit-content;
 }
 * body .banner {
   width: 100%;
@@ -87,14 +53,13 @@
 * body .content {
   box-sizing: border-box;
   width: 100%;
-  height: 300px;
-  padding: 0px 120px;
+  height: auto;
+  padding: 0px 10%;
   font-family: "SourceSansPro-Regular", sans-serif;
 }
 * body .content h2 {
   font-size: 22px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
 }
@@ -107,20 +72,76 @@
 }
 * body .content form {
   width: 100%;
-  height: 500px;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: "Source Code Pro", monospace;
+  padding: 30px 0;
+}
+* body .content form .input {
+  position: relative;
+}
+* body .content form .input h3 {
+  top: 0;
+  margin: 0;
+  left: 1em;
+  font-size: 12px;
+  position: absolute;
+  background-color: #FFFFFF;
+  transform: translate(0, -50%);
+  padding-left: 5px;
+  padding-right: 5px;
+  white-space: nowrap;
+}
+* body .content form .input input {
+  padding: 20px 10px 15px 10px !important;
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+* body .content form .input input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 300 !important;
+}
+* body .content form .input select {
+  padding: 20px 10px 15px 10px !important;
+  height: 100%;
+  width: 100%;
+  min-width: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+* body .content form .input select::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 300 !important;
+}
+* body .content form .input textarea {
+  padding: 20px 10px 15px 10px !important;
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+* body .content form .input textarea::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 300 !important;
 }
 * body .content form .section {
   display: flex;
   width: 100%;
-  padding: 30px 60px;
+  padding: 15px 60px;
 }
 * body .content form .section .field {
   display: flex;
 }
 * body .content form .section .field.col {
   flex-direction: column;
+}
+* body .content form .section .flex {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2.3em;
+  flex-wrap: wrap;
+}
+* body .content form .section .flex input {
+  padding: 15px;
 }
 * body .content form .section.introduction {
   gap: 10px;
@@ -130,6 +151,12 @@
 }
 * body .content form .section.col {
   flex-direction: column;
+  gap: 20px;
+}
+* body .content form .section .duplicable {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=ouput.css.map */

@@ -17,8 +17,7 @@
     <div class="content">
         <form action="">
             <div class="section col introduction">
-                <h2 class="self-centered">Conception Fichier iNot | XML</h2>
-                <div class="field col">
+                <div class="field col input">
                     <h3>Numéro de dossier</h3>
                     <input type="number" placeholder="0000" />
                 </div>
@@ -26,183 +25,190 @@
             <div class="section col">
                 <h2>Assiette Foncière</h2>
                 <div class="flex space-b">
-                    <div class="field">
-                        <h3>PAYS :</h3>
+                    <div class="field input">
+                        <h3>Pays :</h3>
                         <select name="country">
                             <option value="france">France</option>
                             <option value="monaco">Monaco</option>
                         </select>
                     </div>
-                    <div class="field">
+                    <div class="field input">
                         <h3>Commune</h3>
-                        <input type="TEXT" placeholder="Commune" />
+                        <input name="commune" type="TEXT" placeholder="Commune" />
                     </div>
-                    <div class="field">
+                    <div class="field input">
                         <h3>Code postal</h3>
-                        <input type="number" placeholder="0000à" min="00001" max="99999" />
+                        <input name="zipCode" type="number" placeholder="00000" min="00001" max="99999" />
                     </div>
                 </div>
-                <div class="flex space-b">
+                <div class="flex space-b input">
                     <div class="field">
                         <h3>Adresse principale</h3>
-                        <input type="TEXT" placeholder="Adresse postal" />
+                        <input name="mainAddress" type="TEXT" placeholder="Adresse postal" />
                     </div>
-                    <div class="field">
+                    <div class="field input">
                         <h3>Adresse secondaire</h3>
-                        <input type="TEXT" placeholder="Adresse postal" />
+                        <input name="secondaryAddress" type="TEXT" placeholder="Adresse postal" />
                     </div>
                 </div>
             </div>
             <div class="section col">
                 <h2>Référence Cadastrale</h2>
-                <div class="flex">
-                    <h3>NOMBRE DE PARCELLE :</h3>
-                    <input type="number" placeholder="0000" />
+                <div class="duplicable refCadastrale">
+                    <div class="flex input">
+                        <h3>Nombre de parcelle :</h3>
+                        <input type="number" placeholder="0000" />
+                    </div>
+                    <div class="flex space-b">
+                        <div class="flex input">
+                            <h3>Section cadastrale :</h3>
+                            <input name="section" type="number" placeholder="0000" />
+                        </div>
+                        <div class="flex input">
+                            <h3>Numéro de parcelle :</h3>
+                            <input name="parcelleNumber" type="number" placeholder="0000" />
+                        </div>
+                        <div class="flex input">
+                            <h3>Hectare(s)</h3>
+                            <input name="hectares" type="number" placeholder="0000" />
+                        </div>
+                        <div class="flex input">
+                            <h3>Are(s)</h3>
+                            <input name="ares" type="number" placeholder="0000" />
+                        </div>
+                        <div class="flex input">
+                            <h3>Centiare(s)</h3>
+                            <input name="centiares" type="number" placeholder="0000" />
+                        </div>
+                    </div>
                 </div>
-                <div class="flex space-b">
-                    <div class="flex">
-                        <h3>SECTION CADASTRALE :</h3>
-                        <input type="number" placeholder="0000" />
-                    </div>
-                    <div class="flex">
-                        <h3>NUMÉRO DE PARCELLE :</h3>
-                        <input type="number" placeholder="0000" />
-                    </div>
-                    <div class="flex">
-                        <h3>HECTARE(S)</h3>
-                        <input type="number" placeholder="0000" />
-                    </div>
-                    <div class="flex">
-                        <h3>ARE(S)</h3>
-                        <input type="number" placeholder="0000" />
-                    </div>
-                    <div class="flex">
-                        <h3>CENTIARE(S)</h3>
-                        <input type="number" placeholder="0000" />
-                    </div>
-                </div>
+                <div class="duplicate_button button" >Ajouter un lot</div>
             </div>
             <div class="section col">
                 <h2>Descriptif des Lot</h2>
-                <div>
+                <div class="field input">
                     <h3>description de l'ensemble immobilier</h3>
                     <textarea name="immoDescr" id="" cols="30" rows="10"></textarea>
                 </div>
-                <div class="flex">
-                    <div class="field">
-                        <h3>Numéro de lot : </h3>
-                        <input type="number" placeholder="000" />
-                    </div>
-                    <div class="field">
-                        <h3>TYPE : </h3>
-                        <select name="TYPE">
-                            <option value="appartement">Appartement</option>
-                            <option value="local">Local</option>
-                            <option value="garage">Garage</option>
-                            <option value="cave">Cave</option>
-                            <option value="jardin">Jardin</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <h3>BATIMENT : </h3>
-                        <select name="batiment">
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                            <option value="D">D</option>
-                            <option value="E">E</option>
-                            <option value="F">F</option>
-                            <option value="G">G</option>
-                            <option value="H">H</option>
-                            <option value="I">I</option>
-                            <option value="J">J</option>
-                            <option value="K">K</option>
-                            <option value="L">L</option>
-                            <option value="M">M</option>
-                            <option value="N">N</option>
-                            <option value="O">O</option>
-                            <option value="P">P</option>
-                            <option value="Q">Q</option>
-                            <option value="R">R</option>
-                            <option value="S">S</option>
-                            <option value="T">T</option>
-                            <option value="U">U</option>
-                            <option value="V">V</option>
-                            <option value="W">W</option>
-                            <option value="X">X</option>
-                            <option value="Y">Y</option>
-                            <option value="Z">Z</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <h3>NIVEAU : </h3>
-                        <select name="level">
-                            <option value="0">0</option>
-                            <option value="-1">-1</option>
-                            <option value="-2">-2</option>
-                            <option value="-3">-3</option>
-                            <option value="-4">-4</option>
-                            <option value="-5">-5</option>
-                            <option value="-6">-6</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                        </select>
+                <div class="duplicable lotDescrption">
+                    <div class="flex">
+                        <div class="field input">
+                            <h3>Numéro de lot : </h3>
+                            <input name="numero" type="number" placeholder="000" />
+                        </div>
+                        <div class="field input">
+                            <h3>Type : </h3>
+                            <select name="type">
+                                <option value="appartement">Appartement</option>
+                                <option value="local">Local</option>
+                                <option value="garage">Garage</option>
+                                <option value="cave">Cave</option>
+                                <option value="jardin">Jardin</option>
+                            </select>
+                        </div>
+                        <div class="field input">
+                            <h3>Batiment : </h3>
+                            <select name="batiment">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                                <option value="G">G</option>
+                                <option value="H">H</option>
+                                <option value="I">I</option>
+                                <option value="J">J</option>
+                                <option value="K">K</option>
+                                <option value="L">L</option>
+                                <option value="M">M</option>
+                                <option value="N">N</option>
+                                <option value="O">O</option>
+                                <option value="P">P</option>
+                                <option value="Q">Q</option>
+                                <option value="R">R</option>
+                                <option value="S">S</option>
+                                <option value="T">T</option>
+                                <option value="U">U</option>
+                                <option value="V">V</option>
+                                <option value="W">W</option>
+                                <option value="X">X</option>
+                                <option value="Y">Y</option>
+                                <option value="Z">Z</option>
+                            </select>
+                        </div>
+                        <div class="field input">
+                            <h3>Niveau : </h3>
+                            <select name="level">
+                                <option value="0">0</option>
+                                <option value="-1">-1</option>
+                                <option value="-2">-2</option>
+                                <option value="-3">-3</option>
+                                <option value="-4">-4</option>
+                                <option value="-5">-5</option>
+                                <option value="-6">-6</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
 
+                        </div>
+                        <div class="field input">
+                            <h3>Escalier : </h3>
+                            <select name="stairs">
+                                <option value="">-</option>
+                                <option value="U">U</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                                <option value="G">G</option>
+                                <option value="H">H</option>
+                                <option value="I">I</option>
+                                <option value="J">J</option>
+                                <option value="K">K</option>
+                                <option value="L">L</option>
+                                <option value="M">M</option>
+                                <option value="N">N</option>
+                                <option value="O">O</option>
+                                <option value="P">P</option>
+                                <option value="Q">Q</option>
+                                <option value="R">R</option>
+                                <option value="S">S</option>
+                                <option value="T">T</option>
+                                <option value="V">V</option>
+                                <option value="W">W</option>
+                                <option value="X">X</option>
+                                <option value="Y">Y</option>
+                                <option value="Z">Z</option>
+                            </select>
+                        </div>
+                        <div class="field input">
+                            <h3>Quote-part : </h3>
+                            <input type="number" name="quote-part-1" id="quote-part-1" placeholder="00000">
+                            <p> / </p>
+                            <select name="quote-part-2" id="">
+                                <option value="1000">1000</option>
+                                <option value="10 000">10 000</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="field">
-                        <h3>escalier : </h3>
-                        <select name="stairs">
-                            <option value="">-</option>
-                            <option value="U">U</option>
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                            <option value="D">D</option>
-                            <option value="E">E</option>
-                            <option value="F">F</option>
-                            <option value="G">G</option>
-                            <option value="H">H</option>
-                            <option value="I">I</option>
-                            <option value="J">J</option>
-                            <option value="K">K</option>
-                            <option value="L">L</option>
-                            <option value="M">M</option>
-                            <option value="N">N</option>
-                            <option value="O">O</option>
-                            <option value="P">P</option>
-                            <option value="Q">Q</option>
-                            <option value="R">R</option>
-                            <option value="S">S</option>
-                            <option value="T">T</option>
-                            <option value="V">V</option>
-                            <option value="W">W</option>
-                            <option value="X">X</option>
-                            <option value="Y">Y</option>
-                            <option value="Z">Z</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <h3>escalier : </h3>
-                        <input type="number" name="quote-part-1" id="quote-part-1" placeholder="00000">
-                        <p> / </p>
-                        <select name="" id="">
-                            <option value="1000">1000</option>
-                            <option value="10 000">10 000</option>
-                        </select>
+                    <div class="field input">
+                        <h3>Désignation : </h3>
+                        <input type="text" name="designation" id="" placeholder="Désignation">
                     </div>
                 </div>
-                <div class="field">
-                    <h3>Désignation : </h3>
-                    <input type="text" name="" id="" placeholder="Désignation">
-                </div>
+                <div class="duplicate_button button" >Ajouter un lot</div>
+                <div class="button xmlButton">Convertir en XML</div>
             </div>
         </form>
     </div>

@@ -6,6 +6,24 @@
 
     body {
         margin: 0 !important;
+        height: 100%;
+        display: block;
+
+        .button {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.40);
+            color: rgba(0, 0, 0, 0.60);
+
+            text-align: justify;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            width: fit-content;
+        }
 
         .banner {
             width: 100%;
@@ -33,15 +51,14 @@
         .content {
             box-sizing: border-box;
             width: 100%;
-            height: 300px;
-            padding: 0px 120px;
+            height: auto;
+            padding: 0px 10%;
 
             font-family: "SourceSansPro-Regular", sans-serif;
 
             h2 {
                 font-size: 22px;
                 font-style: normal;
-                font-weight: 400;
                 line-height: normal;
                 text-transform: uppercase;
             }
@@ -56,19 +73,86 @@
 
             form {
                 width: 100%;
-                height: 500px;
                 border-left: 1px solid rgba(0, 0, 0, 0.10);
                 border-right: 1px solid rgba(0, 0, 0, 0.10);
+                font-family: 'Source Code Pro', monospace;
+                padding: 30px 0;
+
+                .input {
+                    position: relative;
+
+                    h3 {
+                        top: 0;
+                        margin: 0;
+                        left: 1em;
+                        font-size: 12px;
+                        position: absolute;
+                        background-color: #FFFFFF;
+                        transform: translate(0, -50%);
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        white-space: nowrap;
+                    }
+
+                    input {
+                        padding: 20px 10px 15px 10px !important;
+                        height: 100%;
+                        width: 100%;
+                        border: 1px solid rgba(0, 0, 0, 0.1);
+                    }
+
+                    input::placeholder {
+                        color: rgba(0, 0, 0, 0.40);
+                        font-weight: 300 !important;
+                    }
+
+                    select {
+                        padding: 20px 10px 15px 10px !important;
+                        height: 100%;
+                        width: 100%;
+                        min-width: 200px;
+                        border: 1px solid rgba(0, 0, 0, 0.1);
+                    }
+
+                    select::placeholder {
+                        color: rgba(0, 0, 0, 0.40);
+                        font-weight: 300 !important;
+                    }
+
+                    textarea {
+                        padding: 20px 10px 15px 10px !important;
+                        height: 100%;
+                        width: 100%;
+                        border: 1px solid rgba(0, 0, 0, 0.1);
+                    }
+
+                    textarea::placeholder {
+                        color: rgba(0, 0, 0, 0.40);
+                        font-weight: 300 !important;
+                    }
+                }
 
                 .section {
                     display: flex;
                     width: 100%;
-                    padding: 30px 60px;
+                    padding: 15px 60px;
 
                     .field {
                         display: flex;
+
                         &.col {
                             flex-direction: column;
+                        }
+                    }
+
+                    .flex {
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 2.3em;
+                        flex-wrap: wrap;
+
+                        input {
+                            padding: 15px;
                         }
                     }
 
@@ -76,11 +160,19 @@
                         h2 {
                             margin: 0;
                         }
+
                         gap: 10px;
                     }
 
                     &.col {
                         flex-direction: column;
+                        gap: 20px;
+                    }
+
+                    .duplicable {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
                     }
                 }
             }
